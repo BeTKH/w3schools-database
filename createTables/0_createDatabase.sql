@@ -1,0 +1,41 @@
+-- CREATE DATABASE IF NOT EXISTS "w3schools";
+CREATE DATABASE w3schools;
+-- /*
+--  To void unintentional insertion of 0 or empty strings 
+--  into auto-incremented columns.
+--  */
+-- SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+-- /*
+--  disable the AUTOCOMMIT mode,
+--  changes made within the current transaction will not be committed automatically. 
+--  Instead, explicitly issue a COMMIT command to commit the changes, or a ROLLBACK 
+--  command to discard them. 
+--  Disabling AUTOCOMMIT allows to group multiple SQL statements into a single transaction, 
+--  ensuring that they are all executed atomically.
+--  */
+-- SET AUTOCOMMIT = 0;
+-- /*
+--  This command explicitly starts a new transaction. 
+--  When AUTOCOMMIT is disabled, you need to start a transaction explicitly using START TRANSACTION; 
+--  (or simply BEGIN;). 
+--  All subsequent SQL statements until a COMMIT; or ROLLBACK; 
+--  command will be part of this transaction.
+--  */
+-- START TRANSACTION;
+-- /* This command sets the session's time zone to UTC (Coordinated Universal Time) 
+--  with the offset of +00:00. This ensures that date and time operations within the 
+--  session are performed using the UTC time zone, providing consistency and avoiding 
+--  potential issues related to time zone conversions.*/
+-- SET time_zone = "+00:00";
+-- /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
+-- ;
+-- /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
+-- ;
+-- /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */
+-- ;
+-- /*!40101 SET NAMES utf8mb4 */
+-- ;
+-- CREATE DATABASE IF NOT EXISTS `w3schools`
+-- /*!40100 DEFAULT CHARACTER SET utf8 */
+-- ;
+-- USE `w3schools`;
